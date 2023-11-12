@@ -1,0 +1,31 @@
+.about-content {
+    font-family: 'Courier New', monospace;
+    font-size: 18px; /* font boyutunu biraz artırdık */
+    line-height: 1.6;
+    max-width: 90%;
+    text-align: left;
+    background-color: #282c34;
+    padding: 30px;
+    border-radius: 5px;
+    color: #50fa7b;
+    border-left: 5px solid #50fa7b;
+    overflow: hidden;
+    margin-top: -50px; /* konumu biraz yukarıya taşıdık */
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: #50fa7b; }
+}
+
+.animate-typing {
+    border-right: .15em solid #50fa7b;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 5s steps(60, end), blink-caret .75s step-end infinite;
+}

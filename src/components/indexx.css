@@ -1,0 +1,90 @@
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.animate-type {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 2s steps(40, end) forwards;
+}
+
+.matrix-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.matrix-column {
+  font-size: 15px;
+  font-family: 'Courier New', Courier, monospace;
+  color: #00FF41;
+  white-space: nowrap;
+  display: inline-block;
+  opacity: 0.8;
+}
+
+.code-animation {
+display: inline-block;
+overflow: hidden;
+white-space: nowrap;
+animation: typeAnimation 5s steps(40, end) forwards;
+width: 0;
+}
+
+@keyframes typeAnimation {
+100% {
+    width: 100%;
+}
+}
+
+.color-blue {
+color: #61AFEF;
+}
+
+.color-yellow {
+color: #E5C07B;
+}
+
+@keyframes blink {
+0% { opacity: 1; }
+50% { opacity: 0; }
+100% { opacity: 1; }
+}
+
+.blink {
+animation: blink 1s infinite;
+}
+
+/* Custom Button Styles */
+.custom-btn {
+  background-color: #2C2C2C;
+  border: none;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.custom-btn:hover {
+  background-color: #00FF41;
+}
+
+.custom-btn:focus {
+  outline: none;
+}
+
+.custom-btn:active {
+  transform: scale(0.98);
+}
