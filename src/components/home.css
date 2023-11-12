@@ -1,0 +1,9 @@
+/* home.css */
+
+.icon-animation {
+    transition: transform 0.3s ease-in-out;
+}
+
+.icon-animation:hover {
+    transform: rotate(20deg);
+}
