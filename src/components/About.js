@@ -7,16 +7,18 @@ const About = () => {
             <div className="flex flex-col h-screen justify-center items-center bg-transparent text-white relative mt-12">
                 <div className="about-content mt-8 z-10 animate-typing">
                     <p>
-                        &gt; Hello everyone! My name is <span className="text-yellow-400">Muhammed Murat Yanaşoğlu</span>.<br />
-                        &gt; I am 20 years old and a 3rd-year Software Engineering student.<br />
-                        &gt; I completed my middle school and high school education at Hala Sultan Theology College and Erenköy High School.<br />
-                        &gt; I have a character that loves to work in teams and adopts a strong work ethic.<br />
-                        &gt; Additionally, I am interested in the fields of Cybersecurity and Artificial Intelligence.<br />
+                        &gt; Hello everyone! My name is <span className="text-yellow-400">Muhammed Murat Yanasoglu</span>.<br />
+                        &gt; I am a Junior Student at Near East University,Major In Software Engineering <br />
+                        &gt;and Student Department of History at Anadolu University <br />
+                        &gt; I love learning new things in developing software, new languages.<br />
+                        &gt;I am advancing in front-end development by using React.js, Next,js, Typescript, Javascript, Tailwind CSS  <br />
+                        &gt; and Ant Design, still learning to develop my skills<br />
+                        &gt; Furthermore, Cybersecurity and Artificial Intelligence attract me to work on.<br />
                         &gt; <br />
-                        &gt; As for my hobbies, I can list history, numismatics, reading books, writing poetry, and listening to classical music.<br />
+                        &gt; As my hobbies History-numismatics,chess and listening classical music hold a significant part in my life.  <br />
                         &gt; <br />
                         &gt; Kind Regards,<br />
-                        &gt; <span className="text-yellow-400">Muhammed Murat Yanaşoğlu</span>
+                        &gt; <span className="text-yellow-400">Muhammed Murat Yanasoglu</span>
                     </p>
                 </div>
             </div>

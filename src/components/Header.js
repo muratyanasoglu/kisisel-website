@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import {
     LinkedinOutlined,
     GithubOutlined,
-    MediumOutlined,  
+    MediumOutlined,
     InstagramOutlined,
     UserOutlined,
     RocketOutlined,
@@ -28,8 +28,11 @@ const Header = () => {
         const ctx = canvas.getContext('2d');
 
         function updateCanvasSize() {
-            canvas.width = window.innerWidth;
-            canvas.height = document.body.offsetHeight; // Sayfanın toplam yüksekliğini al
+            const canvas = document.getElementById('matrixCanvas');
+            if (canvas) {
+                canvas.width = window.innerWidth;
+                canvas.height = window.innerHeight; // Sayfanın tam yüksekliğini al
+            }
         }
 
         // Pencere yeniden boyutlandırıldığında veya içerik değiştiğinde canvas boyutunu güncelle
@@ -78,7 +81,7 @@ const Header = () => {
 
     return (
         <div className="mb-0 relative">
-            <canvas id="matrixCanvas" className="absolute top-0 left-0 z-0 w-full"></canvas>
+            <canvas id="matrixCanvas" className="fixed top-0 left-0 z-0 w-full h-full"></canvas>
             <div className="container mx-auto relative z-10">
                 <div className="flex flex-col justify-between items-center">
                     <div className="flex justify-between items-center w-full mb-4">
@@ -120,10 +123,10 @@ const Header = () => {
                         <Link to="/about"><Button icon={<UserOutlined />} className="custom-btn">About Me</Button></Link>
                         <Link to="/skills"><Button icon={<RocketOutlined />} className="custom-btn">My Skills</Button></Link>
                         <Link to="/certificates"><Button icon={<SafetyCertificateOutlined />} className="custom-btn">My Certificates</Button></Link>
-                        <Link to="/experiences"><Button icon={<ToolOutlined />} className="custom-btn">My Work Experiences</Button></Link>
-                        <Link to="/projects"><Button icon={<AppstoreAddOutlined />} className="custom-btn">My Projects</Button></Link>
+                        {/* <Link to="/experiences"><Button icon={<ToolOutlined />} className="custom-btn">My Work Experiences</Button></Link> */}
+                        {/* <Link to="/projects"><Button icon={<AppstoreAddOutlined />} className="custom-btn">My Projects</Button></Link> */}
                         <Link to="/cv"><Button icon={<FileTextOutlined />} className="custom-btn">CV</Button></Link>
-                        <Link to="/contacts"><Button icon={<PhoneOutlined />} className="custom-btn">Contacts</Button></Link>
+                        <Link to="/contacts"><Button icon={<PhoneOutlined />} className="custom-btn">Contact Me</Button></Link>
                     </div>
                 </div>
             </div>

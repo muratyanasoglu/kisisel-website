@@ -1,0 +1,27 @@
+.certificates-container {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000; /* Arka plan rengi siyah */
+}
+
+.certificate {
+    margin-bottom: 30px;
+    text-align: center;
+    width: 100%;
+}
+
+.certificate-title {
+    color: #FFF; /* Başlık rengi beyaz */
+    margin-bottom: 15px;
+}
+
+.certificate-image {
+    max-width: 100%; /* Resmin genişliğini sınırla */
+    height: auto; /* Resmin yüksekliğini orantılı tut */
+    border: 1px solid #ddd; /* Resme hafif bir çerçeve ekle */
+    border-radius: 4px; /* Kenarları hafifçe yuvarla */
+    margin-bottom: 20px; /* Altındaki içeriğe boşluk bırak */
+}
