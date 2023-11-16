@@ -9,11 +9,11 @@ const Home = () => {
                 <canvas id="matrixCanvas" className="absolute top-0 left-0 z-0 w-full h-full"></canvas>
 
                 <h1 className="text-6xl font-mono font-bold mb-4 animate-pulse z-10">
-                    Welcome to Murat's Dev Space
+                    Welcome to Murat's World
                 </h1>
 
                 <p className="text-2xl mb-8 font-semibold tracking-wider z-10">
-                    The Hacker's Playground
+                    The Software Engineer Playground
                 </p>
 
                 <div className="flex space-x-8 z-10">
